@@ -1,0 +1,271 @@
+// Import
+@import "mixins";
+@import "variables";
+
+
+/* *********************** GENERAL *********************** */
+.btn-primary {
+    background-color: $color-button;
+    border-color: $color-button;
+    box-shadow: $box-shadow;
+}
+
+
+/* *********************** COMMON *********************** */
+%article {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+}
+
+
+/* *********************** HEADER *********************** */
+.header {
+    height: 100vh;
+    min-height: 500px;
+    background-color: #fff;
+    @extend %article;
+}
+
+
+/* *********************** NAVBAR *********************** */
+.navbar {
+    padding: 1.2em 0;
+    background: #fff;
+    box-shadow: $box-shadow;
+
+    .navbar-brand {
+        font-weight: bold;
+        color: $color-button;
+    }
+
+    .nav-item a {
+        margin: 0 0.25em;
+        text-transform: uppercase;
+    }
+
+    .nav-link {
+        font-weight: 600;
+    }
+}
+
+
+/* *********************** BANNER *********************** */
+.banner {
+    height: 100%;
+    padding: 7em 0;
+    background: url("../images/dev.svg") no-repeat right 15% bottom / contain;
+    background-size: 40%;
+    
+    .container {
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .banner-name {
+        font-weight: bold;
+        line-height: 1.8;
+    }
+    h5 {
+        font-family: "RobotoThin" sans-serif;
+        opacity: 0.7;
+        // font-size: small;
+    }
+    .social {
+        margin: 1.5em 0;
+        @include socialicons;
+        font-size: 25px;
+    }
+    .social i {
+        margin-right: 0.4em;
+    }
+    .btn {
+        text-transform: uppercase;
+        background-color: $gradient-color;
+    }
+}
+
+
+/* *********************** ROWS *********************** */
+.row {
+    padding: 3.5em 0;
+    & > .col-12 {
+        padding-bottom: 4em;
+        text-align: center;
+    }
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        // margin-bottom: 1.3em;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 150px;
+            height: 3px;
+            background-color: $color-button;
+            margin: 0 auto 5px auto;
+        }
+    }
+}
+
+
+/* *********************** ABOUT *********************** */
+.about {
+    background-color: $bg-light;
+    min-height: 100vh;
+    @extend %article;
+    // .row & {
+    //     border-bottom: 1px solid &color-3;
+    // }
+    .about-name {
+        font-weight: bold;
+        margin-bottom: .8em;
+    }
+    .about-desc {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+    .about-tech {
+        width: 100%;
+        font-size: 40px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.2em;
+    }
+    .about-image {
+        // background: center center / cover no-repeat url("../images/mooktar.jpg");
+        display: flex;
+        justify-content: center;
+        img {
+            width: auto;
+            height: 350px;
+        }
+    }
+}
+
+
+/* *********************** SERVICES *********************** */
+.services {
+    // min-height: 100vh;
+    @extend %article;
+
+    .col-md-3 {
+        padding: 0.8em;
+        i {
+            font-size: 35px;
+            margin-bottom: .7em;
+            // color: $color-button;
+        }
+        p {
+            margin: 0.4em 0;
+            line-height: 1.7;
+        }
+    }
+}
+
+
+/* *********************** CALL TO ACTION *********************** */
+.call-to-action {
+    background-color: $bg-light;
+
+    .container {
+        padding: 2em 0;
+        text-align: center;
+    }
+    h2 {
+        // margin-bottom: 1.5em;
+        font-weight: bold;
+    }
+    p {
+        margin: 0.7em 0;
+    }
+}
+
+
+/* *********************** PORTFOLIO *********************** */
+.portfolio {
+    @extend %article;
+
+    .portfolio-item {
+        margin: 0.6em 0;
+        overflow: hidden;
+        box-shadow: $box-shadow;
+        
+        .card-body {
+            position: absolute;
+            bottom: -50%;
+            background-color: #fff;
+            width: 100%;
+            transition: bottom .5s ease-in-out;
+        }
+        &:hover .card-body {
+            bottom: 0;
+        }
+    }
+}
+
+
+/* *********************** FOOTER *********************** */
+.footer {
+    @extend %article;
+    // min-height: 100vh;
+    background-color: $bg-light;
+
+    h3 {
+        margin-bottom: 0.8em;
+    }
+
+    .contact {
+        .form-control {
+            background-color: transparent;
+        }
+    }
+    
+    .contact-form {
+        .form-control {
+            margin-bottom: 0.6em;
+        }
+        input[type="email"] {
+            margin-left: 0.5em;
+        }
+    }
+    .contact-links {
+        .social {
+            @include socialicons;
+        }
+        i {
+            margin-right: 0.5em;
+        }
+        a {
+            display: block;
+            margin-bottom: 1em;
+            font-size: 16px;
+        }
+    }
+    
+    .copyright {
+        text-align: center;
+        margin-bottom: 0;
+        padding-bottom: 0.9em;
+        i {
+            color: rgb(236, 110, 110);
+        }
+    }
+    .go-top {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        font-size: 30px;
+        opacity: 0.5;
+    }
+}
+
+
+/* ****************** RESPONSIVE ********************** */
+@import "responsive";
