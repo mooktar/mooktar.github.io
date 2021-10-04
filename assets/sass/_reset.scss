@@ -1,0 +1,79 @@
+/* ===== Tags and Variables Reset ===== */
+
+
+/* ===== Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
+:root {
+    /*===== Colors =====*/
+    --first: #4070F4;
+    --second: #0E2431;
+    --light: #f5f9ff;
+    --lighter: #fff;
+
+    /*===== Sizes =====*/
+    --header-height: 80px;
+}
+
+/* ===== General Tags ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    width: 100%;
+    color: var(--second);
+    background-color: var(--lighter);
+    
+    &.dark {
+        --first: #4070F4;
+        --second: #fff;
+        --light: #18313f;
+        --lighter: #0E2431;
+
+        transition: color 0.2s;
+    }
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: var(--second);
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0.7em 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    font-size: 1.1em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+section {
+    padding: 6em 0;
+}
