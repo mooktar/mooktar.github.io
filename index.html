@@ -1,232 +1,462 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mohamadou Mouktar">
-    <meta name="description" content="Je suis développeur web fullstack Django et React. Depuis plus d'un an je travail en tant que freelance chez Hoytima Technology, une agence web que j'ai fondée.">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Mohamadou Mouktar">
+        <meta name="description" content="Je suis Mohamadou Mouktar, développeur web fullstack Django et React.">
+        <meta name="keywords" content="mohamadou, mouktar, mooktar, développeur, web, fullstack, django, react">
+        <title>Développeur web fullstack Django et React | Mooktar</title>
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
+        <!-- google fonts -->  
+        <link href="//fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+        <!-- Box Icons -->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./assets/boxicons/css/boxicons.min.css">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <!-- header -->
+        <header id="site-header" class="fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg stroke">
+                    <a class="navbar-brand align-items-center" href="./index.html">
+                        <img src="./assets/images/logo.png" alt="Mooktar" title="Mooktar" />
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link scrollto" href="#apropos">Apropos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="#portfolio">Réalisations</a>
+                            </li>
+                            <li class="nav-item scrollto">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- toggle switch for light and dark theme -->
+                    <div class="mobile-position">
+                        <nav class="navigation">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="mode-container">
+                                        <i class="gg-sun"></i>
+                                        <i class="gg-moon"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </nav>
+                    </div> <!-- //mobile-position -->
+                </nav>
+            </div>
+        </header> <!-- //header -->
+
+        <main id="main" role="main">
     
-    <title>Développeur Web Fullstack | Mooktar</title>
-
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <!-- <link rel="stylesheet" href="./assets/vendors/boxicons/css/boxicons.css"> -->
-</head>
-<body id="top" class="">
-
-    <!-- ====== Header ====== -->
-    <header id="header" class="header">
-        <!-- ====== Navbar ====== -->
-        <nav id="navbar" class="navbar">
-            <div class="section__container">
-                <a href="#" class="navbar__brand">Mooktar</a>
-                <div class="navbar__menu">
-                    <div class="navbar__nav" id="navbar-nav">
-                        <a href="#main" class="navbar__link">Apropos</a>
-                        <a href="#services" class="navbar__link">Services</a>
-                        <a href="#projects" class="navbar__link">Réalisations</a>
-                        <a href="#contact" class="navbar__link">Contact</a>
-                    </div>
-                    <i id="theme-switcher" class="bx bx-moon"></i>
-                    <i id="navbar-toggle" class="bx bx-menu"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- ====== Main ====== -->
-    <main id="main" class="main" role="main">
-        <!-- ====== Hero ====== -->
-        <section id="hero" class="hero">
-            <div class="section__container">
-                <div class="hero__text">
-                    <p>Salut &#128075; je suis</p>
-                    <h1>Mohamadou <span>Mouktar</span></h1>
-                    <p>Développeur Web Fullstack</p>
-                    <div class="hero__icons">
-                        <a href="https://www.twitter.com/mohmouktar" target="_blank">
-                            <i class="bx bxl-twitter"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mohamadou-mouktar" target="_blank">
-                            <i class="bx bxl-linkedin"></i>
-                        </a>
-                        <a href="https://www.github.com/mooktar" target="_blank">
-                            <i class="bx bxl-github"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UC3nozpFIUR_8XJaDZphlBEQ" target="_blank">
-                            <i class="bx bxl-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero__image">
-                    <img src="./assets/images/mooktar.jpg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!-- ====== Services ====== -->
-        <section id="services" class="services">
-            <div class="section__container">
-                <div class="section__header">
-                    <h4>Mes compétences</h4>
-                    <h2>Services</h2>
-                </div>
-                <!-- ====== Services Content ====== -->
-                <div class="service__items">
-                    <div class="service__item">
-                        <i class="bx bxl-react"></i>
-                        <h3>Frontend React</h3>
-                        <p>Je crée des applications réactives avec HTML5, CSS3, JavaScript et la librairie React.</p>
-                    </div>
-                    <div class="service__item">
-                        <i class="bx bxl-django"></i>
-                        <h3>Backend Django</h3>
-                        <p>Je développe des sites et applications web dynamique avec le framework Django du Python.</p>
-                    </div>
-                    <div class="service__item">
-                        <i class="bx bxl-wordpress"></i>
-                        <h3>CMS WordPress</h3>
-                        <p>Je crée des sites web vitrine, landing page, e-commerce sous WordPress et WooCommerce.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ====== Projects ====== -->
-        <section id="projects" class="projects">
-            <div class="section__container">
-                <div class="section__header">
-                    <h4>Mes réferences</h4>
-                    <h2>Projets</h2>
-                </div>
-                <!-- ====== Projects Content ====== -->
-                <div class="project__items">
-                    <div class="project__item">
-                        <div class="project__image">
-                            <img src="./assets/images/portfolio-baba-telecom.png" alt="Baba Telecom">
-                        </div>
-                        <div class="project__body">
-                            <h3>Baba Telecom</h3>
+            <!-- banner section -->
+            <section id="apropos" class="banner py-5">
+                <div class="container pt-4">
+                    <div class="row align-items-center">
+                        <!-- banner text -->
+                        <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4">
+                            <span class="title-small">Salut, je suis</span>
+                            <h1 class="mb-2 title"><span></span> Mohamadou Mouktar</h1>
+                            <h3 class="mb-4 status">Développeur web fullstack</h3>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Magni natus exercitationem nulla maxime perferendis voluptatibus, 
-                                officia distinctio amet consequuntur corporis temporibus assumenda 
+                                Je développe des sites et applications web depuis plus de 
+                                <strong id="years"></strong> 
+                                ans avec les technologies du Django, React.js et le CMS WordPress.
                             </p>
-                            <a href="babatelecom.net" target="_blank">Live</a>
-                            <a href="#" target="_blank">Source</a>
+                            <div class="banner-action mt-sm-5 mt-4">
+                                <a href="#contact" class="btn btn-style btn-primary mr-2">
+                                    <span class="fa fa-envelope-open mr-2"></span>
+                                    Contactez moi
+                                </a>
+                                <!-- Social links -->
+                                <ul class="social m-0 p-0">
+                                    <li>
+                                        <a href="https://www.twitter.com/mohmouktar" target="_blank">
+                                            <span class="fa fa-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/mohamadou-mouktar" target="_blank">
+                                            <span class="fa fa-linkedin"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.github.com/mooktar" target="_blank">
+                                            <span class="fa fa-github"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UC3nozpFIUR_8XJaDZphlBEQ" target="_blank">
+                                            <span class="fa fa-youtube"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="project__item">
-                        <div class="project__image">
-                            <img src="./assets/images/portfolio-quote-generator.png" alt="Random Code Generator">
-                        </div>
-                        <div class="project__body">
-                            <h3>Random Quote Generator</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Magni natus exercitationem nulla maxime perferendis voluptatibus, 
-                                officia distinctio amet consequuntur corporis temporibus assumenda 
-                            </p>
-                            <a href="quotes-gen.netlify.app" target="_blank">Live</a>
-                            <a href="#" target="_blank">Source</a>
-                        </div>
-                    </div>
-                    <div class="project__item">
-                        <div class="project__image">
-                            <img src="./assets/images/portfolio-slider-form.png" alt="Slider Form">
-                        </div>
-                        <div class="project__body">
-                            <h3>Slider Form</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Magni natus exercitationem nulla maxime perferendis voluptatibus, 
-                                officia distinctio amet consequuntur corporis temporibus assumenda 
-                            </p>
-                            <a href="js-calculator.netlify.app" target="_blank">Live</a>
-                            <a href="#" target="_blank">Source</a>
-                        </div>
-                    </div>
-                    <div class="project__item">
-                        <div class="project__image">
-                            <img src="./assets/images/portfolio-pomodore-clock.png" alt="Pomodore Clock">
-                        </div>
-                        <div class="project__body">
-                            <h3>Pomodore Calculator</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Magni natus exercitationem nulla maxime perferendis voluptatibus, 
-                                officia distinctio amet consequuntur corporis temporibus assumenda 
-                            </p>
-                            <a href="pomodore-calc.netlify.app" target="_blank">Live</a>
-                            <a href="#" target="_blank">Source</a>
+                        <!-- banner image -->
+                        <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-4 justify-content-end">
+                            <div class="img-effect text-lg-right">
+                                <img src="assets/images/banner.png" alt="mooktar" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                 </div>
-                <a href="https://github.com/mooktar" class="btn project__btn">
-                    <i class="bx bxl-github"></i> Voir plus des projets
-                </a>
+            </section> <!-- //banner section -->
+    
+            <!-- services section -->
+            <section id="services" class="services">
+                <div class="blog py-5" id="services">
+                    <div class="container py-lg-5">
+                        <h5 class="title-small text-center">Services</h5>
+                        <h3 class="title-big text-center mb-sm-5 mb-4">Ce que je peux faire pour vous</h3>
+                        <div class="row">
+                            <!-- item -->
+                            <div class="col item">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="bx bxl-react"></span>
+                                        </div>
+                                        <h4 class="number">01</h4>
+                                        <h4><a href="#">Application Front-end</a></h4>
+                                        <p>
+                                            Je développe des sites et applications web réactives avec HTML5, CSS3, JavaScript et React.
+                                        </p>
+                                        <div class="services-icon mt-4 mb-0 text-muted">
+                                            <span class="bx bxl-html5"></span>
+                                            <span class="bx bxl-css3"></span>
+                                            <span class="bx bxl-javascript"></span>
+                                            <span class="bx bxl-sass"></span>
+                                            <span class="bx bxl-bootstrap"></span>
+                                            <span class="bx bxl-react"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- // item -->
+                            <!-- item -->
+                            <div class="col item">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="bx bxl-django"></span>
+                                        </div>
+                                        <h4 class="number">02</h4>
+                                        <h4><a href="#url">Application Back-end</a></h4>
+                                        <p>
+                                            Je développe des applications web dynamiques avec le framework Django du Python.
+                                        </p>
+                                        <div class="services-icon mt-4 mb-0 text-muted">
+                                            <span class="bx bxl-python"></span>
+                                            <span class="bx bxl-django"></span>
+                                            <span class="bx bxl-git"></span>
+                                            <span class="bx bx-data"></span>
+                                            <span class="bx bxs-flask"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- // item -->
+                            <!-- item -->
+                            <div class="col item">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <div class="icon">
+                                            <span class="bx bxl-wordpress" aria-hidden="true"></span>
+                                        </div>
+                                        <h4 class="number">03</h4>
+                                        <h4><a href="#url">CMS WordPress</a></h4>
+                                        <p>
+                                            Je crée des sites web vitrine, de landing page et e-commerce avec le CMS WordPress.
+                                        </p>
+                                        <div class="services-icon mt-4 mb-0 text-muted">
+                                            <span class="bx bxl-wordpress"></span>
+                                            <span class="bx bx-store"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- // item -->
+                            <div class="col-md-12 mx-auto pr-2 d-none">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- //services section -->
+
+            <!-- portfolio section -->
+            <section id="portfolio" class="portfolio services">
+                <div class="blog py-5" id="services">
+                    <div class="container py-lg-5">
+                        <h5 class="title-small text-center">Réalisations</h5>
+                        <h3 class="title-big text-center mb-sm-5 mb-4">Projets que j'ai réalisés</h3>
+                        <!-- portfolio carousel -->
+                        <div class="row mb-4">
+                            <div class="col-md-12 mx-auto pr-2">
+                                <div class="owl-portfolio owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="./assets/images/portfolio/time-tracking-dashboard.png" alt="Projet 1">
+                                            <div class="box-wrap pt-2">
+                                                <h4><a href="#url">Time Tracking Dashboard</a></h4>
+                                                <p>
+                                                    Une application de traçage des horaires passés sur les tâches journaliers, semaines et mensuelles pour un utilisateur donné.
+                                                </p>
+                                                <div class="card-action align-items-center">
+                                                    <a href="https://github.com/hoytima/time-traching.git" class="read mr-3" target="_blank">Code Source</a>
+                                                    <a href="https://time-tracking-dashboard-delta.vercel.app/" class="read" target="_blank">Site web</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- // item -->
+                                    <div class="item">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="./assets/images/portfolio/order-summary.png" alt="Projet 1">
+                                            <div class="box-wrap pt-2">
+                                                <h4><a href="#url">Order Summary</a></h4>
+                                                <p>
+                                                    Page de produit pour passer une commande. Le but est de respecter les spécificités techniques d'une challenge.
+                                                </p>
+                                                <div class="card-action align-items-center">
+                                                    <a href="https://github.com/mooktar/order-summary" class="read mr-3" target="_blank">Code Source</a>
+                                                    <a href="https://order-summary-virid.vercel.app/" class="read" target="_blank">Site web</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- // item -->
+                                    <div class="item">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="./assets/images/portfolio/pomodore.png" alt="Projet 1">
+                                            <div class="box-wrap pt-2">
+                                                <h4><a href="#url">Pomodore Clock</a></h4>
+                                                <p>
+                                                    Une application réact pour le tachnique pomodore avec des temps de travail et de pause éditable.
+                                                </p>
+                                                <div class="card-action align-items-center">
+                                                    <a href="#read" class="read mr-3">Code Source</a>
+                                                    <a href="#read" class="read">Site web</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- // item -->
+                                    <div class="item">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="./assets/images/portfolio/javascript-calculator.png" alt="Projet 1">
+                                            <div class="box-wrap pt-2">
+                                                <h4><a href="#url">JavaScript Calculator</a></h4>
+                                                <p>
+                                                    Une application de Calculatrice de base pour maîtriser la manipulation des élements du DOM en JavaScript.
+                                                </p>
+                                                <div class="card-action align-items-center">
+                                                    <a href="#read" class="read mr-3">Code Source</a>
+                                                    <a href="#read" class="read">Site web</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- // item -->
+                                    <div class="item">
+                                        <div class="card">
+                                            <img class="card-img-top img-fluid" src="./assets/images/portfolio/stats-preview-card.png" alt="Projet 1">
+                                            <div class="box-wrap pt-2">
+                                                <h4><a href="#url">Stats Preview Card</a></h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet sed consectetur adipisicing elit.
+                                                    doloret quas saepe autem, dolor set.
+                                                </p>
+                                                <div class="card-action align-items-center">
+                                                    <a href="#read" class="read mr-3">Code Source</a>
+                                                    <a href="#read" class="read">Site web</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- // item -->
+                                </div>
+                            </div>
+                        </div> <!-- // row -->
+                        <!-- see more -->
+                        <div class="text-more text-center mt-5 py-4">
+                            <a href="https://www.github.com/mooktar" class="btn btn-style btn-primary" target="_blank">
+                                <span class="bx bxl-github mr-2"></span>
+                                Voir plus de projets
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- //portfolio section -->
+
+            <!-- portfolio block -->
+            <section class="services d-none">
+                <div class="achievements py-5" id="services">
+                    <div class="container py-lg-5">
+                        <h5 class="title-small text-center">My achievements</h5>
+                        <h3 class="title-big text-center mb-sm-5 mb-4">Personal Awards</h3>
+                        <div class="row">
+                            <div class="col-lg-6 item">
+                                <div class="card">
+                                    <img src="./assets/images/portfolio/order-summary.png" alt="image" class="card-img-top img-fluid">
+                                    <div class="box-wrap">
+                                        <h4><a href="#url">Website of the day</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam
+                                            suscipit qui veritatis. voluptas quia officiis fugit soluta sunt
+                                        </p>
+                                        <div class="card-action align-items-center">
+                                            <a href="https://github.com/hoytima/time-traching.git" class="read mr-3" target="_blank">Code Source</a>
+                                            <a href="https://time-tracking-dashboard-delta.vercel.app/" class="read" target="_blank">Site web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 item">
+                                <img src="./assets/images/portfolio/time-tracking-dashboard.png" alt="image" class="card-img-top img-fluid">
+                                <div class="card">
+                                    <div class="box-wrap">
+                                        <h4><a href="#url"> Awards Site Of The Day</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam
+                                            suscipit qui veritatis. voluptas quia officiis fugit soluta sunt
+                                        </p>
+                                        <div class="card-action align-items-center">
+                                            <a href="https://github.com/hoytima/time-traching.git" class="read mr-3" target="_blank">Code Source</a>
+                                            <a href="https://time-tracking-dashboard-delta.vercel.app/" class="read" target="_blank">Site web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 item">
+                                <img src="./assets/images/portfolio/pomodore.png" alt="image" class="card-img-top img-fluid">
+                                <div class="card">
+                                    <div class="box-wrap mb-lg-0">
+                                        <h4><a href="#url">Honorable mention award</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam
+                                            suscipit qui veritatis. voluptas quia officiis fugit soluta sunt
+                                        </p>
+                                        <div class="card-action align-items-center">
+                                            <a href="https://github.com/hoytima/time-traching.git" class="read mr-3" target="_blank">Code Source</a>
+                                            <a href="https://time-tracking-dashboard-delta.vercel.app/" class="read" target="_blank">Site web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 item">
+                                <img src="./assets/images/portfolio/stats-preview-card.png" alt="image" class="card-img-top img-fluid">
+                                <div class="card">
+                                    <div class="box-wrap mb-0">
+                                        <h4><a href="#url">Designer of the Company</a></h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi reiciendis labore quisquam
+                                            suscipit qui veritatis. voluptas quia officiis fugit soluta sunt
+                                        </p>
+                                        <div class="card-action align-items-center">
+                                            <a href="https://github.com/hoytima/time-traching.git" class="read mr-3" target="_blank">Code Source</a>
+                                            <a href="https://time-tracking-dashboard-delta.vercel.app/" class="read" target="_blank">Site web</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //portfolio block -->
+
+            <!-- Contact -->
+            <section id="contact" class="contact text-center grid-quote py-5">
+                <div class="container py-4">
+                    <h6 class="title-small text-center">Contact</h6>
+                    <h3 class="title-big mb-md-5 mb-4 text-center">Un projet ou une tâche à me confier?</h3>
+                    <a href="mailto:mohmouktar@gmail.com" class="btn btn-style btn-primary mr-2">Contactez moi</a>
+                </div>
+            </section> <!-- .Contact -->
+
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer py-sm-5 py-4">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-lg-8 footer-left">
+                          <p class="m-0">
+                            &copy;
+                            <script>
+                                let year = new Date().getFullYear()
+                                document.write(year)
+                            </script> 
+                            <span class="font-weight-bold">Mooktar</span>.
+                          </p>
+                        </div>
+                        <div class="col-lg-4 footer-right text-lg-right text-center mt-lg-0 mt-3">
+                            <!-- Social links -->
+                            <ul class="social m-0 p-0">
+                                <li>
+                                    <a href="https://www.twitter.com/mohmouktar" target="_blank">
+                                        <span class="fa fa-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/mohamadou-mouktar" target="_blank">
+                                        <span class="fa fa-linkedin"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.github.com/mooktar" target="_blank">
+                                        <span class="fa fa-github"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/UC3nozpFIUR_8XJaDZphlBEQ" target="_blank">
+                                        <span class="fa fa-youtube"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                      </div>
+                </div>
             </div>
-        </section>
-    </main>
 
-    <!-- ====== Footer ====== -->
-    <footer class="footer">
-        <!-- ====== Contacts ====== -->
-        <section id="contact" class="contact">
-            <div class="section__container">
-                <div class="section__header">
-                    <h4>Me rétrouver</h4>
-                    <h2>Contact</h2>
-                    <div class="contact__cta">
-                        <p>Pour tous vos projets et plus de d'informations, je reste joignable sur les liens ci-aprés. <em class="clr">24h/7</em></p>
-                        <a href="mailto:mohmouktar@gmail.com" class="btn contact__cta__btn">
-                            <i class="bx bx-envelope"></i> Dites moi plus!
-                        </a>
-                    </div>
-                </div>
-                <!-- ====== Contact Content ====== -->
-                <div class="contact__icons">
-                    <div class="contact__icon">
-                        <i class="bx bxl-twitter"></i>
-                        <a href="https://www.twitter.com/mohmouktar" target="_blank">
-                            @mohmouktar
-                        </a>
-                    </div>
-                    <div class="contact__icon">
-                        <i class="bx bxl-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/mohamadou-mouktar" target="_blank">
-                            mohamadou-mouktar
-                        </a>
-                    </div>
-                    <div class="contact__icon">
-                        <i class="bx bxl-github"></i>
-                        <a href="https://www.github.com/mooktar" target="_blank">
-                            mooktar
-                        </a>
-                    </div>
-                    <div class="contact__icon">
-                        <i class="bx bxl-youtube"></i>
-                        <a href="https://www.youtube.com/channel/UC3nozpFIUR_8XJaDZphlBEQ" target="_blank">
-                            mooktar
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+            <!-- move top -->
+            <button onclick="topFunction()" id="movetop" title="Go to top">
+                <span class="fa fa-angle-up"></span>
+            </button>
+            <!-- /move top -->
+        </footer> <!-- //Footer -->
 
-        <!-- ====== Copyright ====== -->
-        <section class="copyright">
-            <p>&copy; 2021 Développé avec <i class="bx bxs-heart"></i> par <a href="#">Mooktar</a>.</p>
-            <a href="#top" class="scroll__top"><i class="bx bxs-up-arrow-square"></i></a>
-        </section>
-    </footer>
+        <!-- all js scripts and files here -->
+        <script src="assets/js/theme-change.js"></script> <!-- theme switch js (light and dark)-->
+        <script src="assets/js/plugins/jquery-3.3.1.min.js"></script> <!-- default jQuery -->
+        <script src="assets/js/plugins/owl.carousel.js"></script> <!-- services owlcarousel -->
+        <script src="assets/js/plugins/jquery.waypoints.min.js"></script> <!-- stats number counter-->
+        <script src="assets/js/plugins/jquery.countup.js"></script> <!-- stats number counter-->
+        <script src="assets/js/plugins/bootstrap.min.js"></script> <!-- bootstrap js -->
+        <script src="assets/js/main.js"></script> <!-- plugins -->
+        <!-- <script src="./assets/js/script.js"></script> -->
 
-    <!-- ====== JavaScript ====== -->
-    <!-- <script src="./assets/vendors/scrollreveal.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.min.js"></script>
-    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
-    <script src="./assets/js/main.js"></script>
-</body>
+    </body>
+
 </html>
