@@ -5,7 +5,7 @@ A simple portfolio website to show my skills and works i've done.
 
 
 ## ScreenShot
-![](D:\Projects\mooktar.github.io\screenshot.png)
+![](./screenshot.png)
 
 
 
